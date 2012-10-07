@@ -46,3 +46,27 @@
   }
 
 })(jQuery, this);
+
+function imageHandler(e2) 
+{ 
+  var store = document.getElementById('imgstore');
+  store.innerHTML='<img src="' + e2.target.result +'">';
+  
+  var listEl = document.createElement("li");
+  
+  
+}
+
+function loadimage(e1)
+{
+  var filename = e1.target.files[0]; 
+  var fr = new FileReader();
+  fr.onload = imageHandler;  
+  fr.readAsDataURL(filename); 
+}
+
+window.onload=function()
+{
+  var y = document.getElementById("getimage");
+  y.addEventListener('change', loadimage, false);
+}

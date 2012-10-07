@@ -42,7 +42,7 @@
   
   <div class="row" id="createRow">
       <div class="twelve columns">
-            <a href="#" class="round large button" data-reveal-id="uploadModal">Create your own card</a>
+            <a href="#" class="round large button split" data-reveal-id="uploadModal">Create your own card <img src="images/574408321992803907.png" ></a>
             <hr>
       </div>
   </div>
@@ -54,167 +54,81 @@
             sort by: <b>popularity</b> | <span>date added</span>
         </div>
         <ul class="block-grid mobile three-up">
-            <li><img src="images/elephant.ico"></li>
-            <li>Three-up element</li>
-            <li>Three-up element</li>
-            <li>Three-up element</li>
-            <li>Three-up element</li>
+            <li>
+                <div>
+                    <img src="images/elephant.ico">
+                    <h4>Elephant</h4>
+                <div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/butterfly.ico">
+                    <h4>Butterfly</h4>
+                <div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/cow.ico">
+                    <h4>Cow</h4>
+                <div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/panda.ico">
+                    <h4>Panda</h4>
+                <div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/mouse.ico">
+                    <h4>Mouse</h4>
+                <div>
+            </li>
         </ul>
     </div>
+     <div class="twelve columns" id="orderButton">
+            <a href="#" class="round large button split" data-reveal-id="XXXuploadModal">Order <img src="images/shopping_cart.png" ></a>
+            <hr>
+      </div>
 </div>
 
 <div id="uploadModal" class="reveal-modal large">
-
-  <h2>Create your own card</h2>
-  <div class="row" id="fileUpload">
-      <div class="five columns">
-        <fieldset>
-            <legend>Image from you computer:</legend>
-            <input type="file"><br/><br/>
-        </fieldset>
-      </div>
-      <div class="two columns" style="text-align:center;padding-top:30px">
-          or
-      </div>
-      <div class="five columns">
-         <fieldset>
-             <legend>Image from web:</legend>
-             URL:<input type="text"><br/><br/>
-             <input type="button" value="Fetch">
-         </fieldset>
-       </div>
-  </div>
-  
-  <a class="close-reveal-modal">&#215;</a>
+    <h2>Create your own card</h2>
+    <form>
+        <div class="row">
+            <div class="four columns">
+                <label class="right inline">Image from your computer:</label>
+            </div>
+            <div class="eight columns">
+                <input type="file" class="eight" style="margin-top:5px"/ id="getimage"> 
+            </div>
+        </div>
+        
+        <div class="row" style="display:none">
+            <div class="four columns">
+                <label class="right inline">Your image:</label>
+            </div>
+            <div class="eight columns" id="imgstore">
+            </div>
+        </div>        
+        <div class="row">
+            <div class="four columns">
+                <label class="right inline">What's on the card:</label>
+            </div>
+            <div class="eight columns">
+                <input type="text" class="eight" placeholder="e.g. Elephant"/> 
+            </div>
+        </div>
+        <div class="row" >
+             <div class="four columns">
+                </div>
+            <div class="eight columns">
+                <a href="#" class="round normal button" id="submit">Submit</a>
+            </div>
+        </div>   
+    </form>
+    <a class="close-reveal-modal">&#215;</a>
 </div>
-
-
-
-
-
-
-
-  <div class="row" style="margin-top:800px">
-    <div class="eight columns">
-      <h3>The Grid</h3>
-
-      <!-- Grid Example -->
-      <div class="row">
-        <div class="twelve columns">
-          <div class="panel">
-            <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="six columns">
-          <div class="panel">
-            <p>Six columns</p>
-          </div>
-        </div>
-        <div class="six columns">
-          <div class="panel">
-            <p>Six columns</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-        <div class="four columns">
-          <div class="panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-      </div>
-      
-      
-      <h3>Tabs</h3>
-      <dl class="tabs">
-        <dd class="active"><a href="#simple1">Simple Tab 1</a></dd>
-        <dd><a href="#simple2">Simple Tab 2</a></dd>
-        <dd><a href="#simple3">Simple Tab 3</a></dd>
-      </dl>
-
-      <ul class="tabs-content">
-        <li class="active" id="simple1Tab">This is simple tab 1's content. Pretty neat, huh?</li>
-        <li id="simple2Tab">This is simple tab 2's content. Now you see it!</li>
-        <li id="simple3Tab">This is simple tab 3's content. It's, you know...okay.</li>
-      </ul>
-      
-      
-      
-      <h3>Buttons</h3>
-
-      <div class="row">
-        <div class="six columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
-        </div>
-        <div class="six columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
-      
-    </div>
-
-    <div class="four columns">
-      <h4>Getting Started</h4>
-      <p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-      <h4>Other Resources</h4>
-      <p>Once you've exhausted the fun in this document, you should check out:</p>
-      <ul class="disc">
-        <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-        <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-        <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-      </ul>
-    </div>
-  </div>
-
-  
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Orbit</h3>
-      <div id="featured">
-        <img src="http://placehold.it/1200x250&text=Slide_1" alt="slide image">
-        <img src="http://placehold.it/1200x250&text=Slide_2" alt="slide image">
-        <img src="http://placehold.it/1200x250&text=Slide_3" alt="slide image">
-      </div>
-    </div>
-  </div>
-  
-  
-  
-  
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Reveal</h3>
-      <p><a href="#" data-reveal-id="exampleModal" class="button">Example modal</a></p>
-    </div>
-  </div>
-  
-  <div id="exampleModal" class="reveal-modal">
-    <h2>This is a modal.</h2>
-    <p>
-      Reveal makes these very easy to summon and dismiss. The close button is simple an anchor with a unicode 
-      character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will 
-      also dismiss it.
-    </p>
-    <a class="close-reveal-modal">×</a>
-  </div>
-  
   
   <!-- Included JS Files (Uncompressed) -->
   <!--

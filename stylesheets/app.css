@@ -18,8 +18,17 @@
 /* -----------------------------------------
    home
 ----------------------------------------- */
-#createRow div{
+#createRow div, #orderButton{
     text-align: center; 
+}
+#createRow a, #orderButton a{
+    padding-left:60px;
+}
+#createRow img, #orderButton img{
+    position:absolute;
+    top:12px;
+    left:20px;
+    width:24px;
 }
 
 #orderRow ul{
@@ -31,11 +40,16 @@
 #sort span{
     text-decoration:underline;
 }
-#fileUpload div, #fileUpload fieldset{
-    height:150px;
+#orderRow ul li{
+    text-align:center;
+    margin: 0 0 20px;
 }
-#fileUpload fieldset{
-    padding:20px;
+#orderRow ul li > div{
+    border:2px solid;
+    box-shadow: 10px 10px 5px #888;
+    width:90%;
+    padding:10px;
+    background:#e5eeee;
 }
 
 /* -----------------------------------------
