@@ -42,16 +42,19 @@
   
   <div class="row" id="createRow">
       <div class="twelve columns">
-            <a href="#" class="round large button">Create your own card</a>
-        
-        <hr>
+            <a href="#" class="round large button" data-reveal-id="uploadModal">Create your own card</a>
+            <hr>
       </div>
   </div>
   
-<div class="row">
+<div class="row" id="orderRow">
     <div class="twelve columns">
-        <ul class="block-grid three-up">
-            <li>Three-up element</li>
+        <h3>Choose cards to order:</h3>
+        <div id="sort">
+            sort by: <b>popularity</b> | <span>date added</span>
+        </div>
+        <ul class="block-grid mobile three-up">
+            <li><img src="images/elephant.ico"></li>
             <li>Three-up element</li>
             <li>Three-up element</li>
             <li>Three-up element</li>
@@ -59,6 +62,37 @@
         </ul>
     </div>
 </div>
+
+<div id="uploadModal" class="reveal-modal large">
+
+  <h2>Create your own card</h2>
+  <div class="row" id="fileUpload">
+      <div class="five columns">
+        <fieldset>
+            <legend>Image from you computer:</legend>
+            <input type="file"><br/><br/>
+        </fieldset>
+      </div>
+      <div class="two columns" style="text-align:center;padding-top:30px">
+          or
+      </div>
+      <div class="five columns">
+         <fieldset>
+             <legend>Image from web:</legend>
+             URL:<input type="text"><br/><br/>
+             <input type="button" value="Fetch">
+         </fieldset>
+       </div>
+  </div>
+  
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+
+
+
 
   <div class="row" style="margin-top:800px">
     <div class="eight columns">

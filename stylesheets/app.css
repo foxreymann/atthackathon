@@ -22,7 +22,21 @@
     text-align: center; 
 }
 
-
+#orderRow ul{
+    margin-top: 30px;
+}
+#sort{
+    text-align:right;
+}
+#sort span{
+    text-decoration:underline;
+}
+#fileUpload div, #fileUpload fieldset{
+    height:150px;
+}
+#fileUpload fieldset{
+    padding:20px;
+}
 
 /* -----------------------------------------
    Page Name 2
