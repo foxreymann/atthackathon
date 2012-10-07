@@ -70,3 +70,7 @@ window.onload=function()
   var y = document.getElementById("getimage");
   y.addEventListener('change', loadimage, false);
 }
+
+$("li div").click(function () {
+     $(this).css('background-color','#f99');
+});

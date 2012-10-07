@@ -44,6 +44,9 @@
     text-align:center;
     margin: 0 0 20px;
 }
+#orderRow ul li img{
+    height:256px;
+}
 #orderRow ul li > div{
     border:2px solid;
     box-shadow: 10px 10px 5px #888;
